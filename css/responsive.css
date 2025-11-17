@@ -3,18 +3,69 @@
 
 @media (min-width: 576px) {
 
-    /* Immagine che inizia a flottare solo su large mobile */
+    /* Immagine circondata dal testo */
     .recipe-description img {
         float: left;
         width: 50%;
-        max-width: 260px;
-        margin-right: 1rem;
-        margin-bottom: .5rem;
+        max-width: 250px;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
-
 
     .social-buttons li a {
         padding: 12px 20px;
-        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* Header: logo a sinistra */
+    header .logo {
+        text-align: left;
+    }
+
+    /* Più spazio nel main */
+    main {
+        padding: 30px;
+    }
+
+    /* Mostra “Dolce Tradizionale” */
+    .recipe-origin {
+        display: inline;
+    }
+
+    /* Titolo più grande */
+    .recipe-name {
+        font-size: 32px;
+    }
+
+    /* Info ricetta in 3 colonne con FLEX */
+    .recipe-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .recipe-info-item {
+        flex-basis: 30%; /* 3 colonne */
+        margin-bottom: 20px;
+    }
+
+    /* Social più larghi */
+    .social-buttons li a {
+        padding: 14px 22px;
+    }
+
+    /* Banner appare */
+    .adv-banner {
+        display: block;
+    }
+
+    /* Immagine sempre flottante */
+    .recipe-description img {
+        float: left;
+        width: 40%;
+        max-width: 300px;
+        margin-right: 10px;
     }
 }
