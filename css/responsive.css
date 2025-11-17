@@ -1,0 +1,20 @@
+/* Responsive overrides for Giallo Booleano */
+/* Mobile first – no modifiche qui */
+
+@media (min-width: 576px) {
+
+    /* Immagine che inizia a flottare solo su large mobile */
+    .recipe-description img {
+        float: left;
+        width: 50%;
+        max-width: 260px;
+        margin-right: 1rem;
+        margin-bottom: .5rem;
+    }
+
+
+    .social-buttons li a {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
