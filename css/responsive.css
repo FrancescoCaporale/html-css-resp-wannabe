@@ -69,3 +69,47 @@
         margin-right: 10px;
     }
 }
+
+@media (min-width: 992px) {
+
+    /* Titolo ancora più grande */
+    .recipe-name {
+        font-size: 40px;
+    }
+
+    /* Info tornano in colonna */
+    .recipe-info {
+        flex-direction: column;
+    }
+
+    .recipe-info-item {
+        flex-basis: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Video e info affiancati */
+    .recipe-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .recipe-video, 
+    .recipe-info {
+        width: 50%;
+    }
+
+    /* Social: compaiono i testi */
+    .social-buttons li a span {
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+    /* Footer in linea */
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
